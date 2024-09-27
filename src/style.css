@@ -1,0 +1,106 @@
+body {
+  background: #fdffcd;
+  font-family: "Fredoka", sans-serif;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 39px;
+  color: #facf5a;
+  font-weight: bold;
+  border-bottom: 5px #facf5a dashed;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #facf5a;
+  text-align: center;
+  border-bottom: 3px #facf5a dashed;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #facf5a;
+}
+
+form {
+  margin: 10 auto;
+  padding-bottom: 39px;
+  display: flex;
+}
+
+.word-input {
+  padding: 18px;
+  border-radius: 25px;
+  background: #facf5a;
+  width: 80%;
+  border: none;
+}
+
+.word-input::placeholder {
+  color: #fdffcd;
+  font-weight: bold;
+  opacity: 1;
+  border: none;
+}
+
+.word-input-button {
+  padding: 18px;
+  border-radius: 25px;
+  background: #facf5a;
+  color: #fdffcd;
+  font-weight: bold;
+  border: 5px solid #facf5a;
+  margin-left: 10px;
+}
+
+.word-input-button:hover {
+  color: #facf5a;
+  background-color: #fdffcd;
+  border: 5px dashed #facf5a;
+  padding: 18px;
+  border-radius: 25px;
+}
+
+.recipe {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  position: relative;
+  padding-left: 20px;
+}
+
+li::before {
+  content: "•";
+  color: #facf5a;
+  position: absolute;
+  left: 0;
+  font-size: 30px;
+  line-height: 1;
+}
+
+a {
+  color: #e4a600;
+}
+
+a:hover {
+  text-decoration: overline;
+}
+
+footer {
+  padding: 39px;
+  font-size: 13px;
+}
