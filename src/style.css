@@ -83,15 +83,6 @@ li {
   padding-left: 20px;
 }
 
-li::before {
-  content: "•";
-  color: #facf5a;
-  position: absolute;
-  left: 0;
-  font-size: 30px;
-  line-height: 1;
-}
-
 a {
   color: #e4a600;
 }
