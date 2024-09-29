@@ -17,6 +17,10 @@ function generateRecipe(event) {
   let prompt = `User instructions: Generate a vegetarian recipe where the main ingredient is ${mainIngredient.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.classList.remove("hidden");
+  recipeElement.innerHTML = `Generating a vegetarian recipe with ${mainIngredient.value}`;
+
   axios.get(apiUrl).then(displayRecipe);
 }
 let recipeFormElement = document.querySelector("#recipe-generator-form");
